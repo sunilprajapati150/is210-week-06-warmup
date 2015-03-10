@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """Provides an interface to data-bearing functions."""
 
-import os
 import json
+import os
 
 
 BALLETS = ['The Nutcracker',
