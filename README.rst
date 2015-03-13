@@ -252,8 +252,19 @@ Specifications
     original object, taking advantage of its mutability. Inner elements are
     immutable and will require replacement.
 
-4.  The function should return the original list with its inner elements
+4.  The function should return **the original list** with its inner elements
     reversed.
+    
+.. warning:
+
+    Your tests will fail if you try to create a new list and return that.
+    You must return the original input object and modify it on-the fly
+    in your loop.
+    
+.. hint::
+
+    Consider how to access or change the value of a list. You did it already
+    in task 2!
 
 .. hint::
 
@@ -267,6 +278,9 @@ Specifications
         for value in iterable_object:
         # do something
         counter += 1
+        
+    Now consider what that counter could represent. At the end of this loop
+    does ``counter == len(iterable_object)``
 
 .. hint::
 
